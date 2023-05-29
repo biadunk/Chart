@@ -10,6 +10,8 @@ import Charts
 
 struct ContentView: View {
     
+    @State var pushed: Bool = false
+    
     let viewMonths: [viewMonth] = [
         .init(date: Date.from(day: 23, month: 10, year: 2019), viewNumbers: 20030),
         .init(date: Date.from(day: 23, month: 10, year: 2020), viewNumbers: 1000),
@@ -23,17 +25,27 @@ struct ContentView: View {
     
     
     var body: some View {
-        VStack {
-            Text("Chart example")
-                .font(.system(size: 40))
-            Chart{
-                ForEach(viewMonths) { viewMonth in
-                    BarMark(x: .value("Month", viewMonth.date, unit: .month), y: .value("Views", viewMonth.viewNumbers))
+        VStack{
+            TabView{
+                VStack {
+                    Text("Chart example")
+                        .font(.system(size: 40))
+                    Chart{
+                        ForEach(viewMonths) { viewMonth in
+                            BarMark(x: .value("Month", viewMonth.date, unit: .month), y: .value("Views", viewMonth.viewNumbers))
+                        }
+                    }
+                    .frame(height: 180)
                 }
+                .padding()
+                
+                FirstTabView()
+                    .tabItem {
+                        Image(systemName: "text.bubble")
+                        Text("Message")
+                    }
             }
-            .frame(height: 180)
         }
-        .padding()
     }
 }
 

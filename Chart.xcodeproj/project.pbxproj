@@ -11,6 +11,7 @@
 		E79E6A4F2A2557E4005063C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E6A4E2A2557E4005063C2 /* ContentView.swift */; };
 		E79E6A512A2557E5005063C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79E6A502A2557E5005063C2 /* Assets.xcassets */; };
 		E79E6A542A2557E5005063C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79E6A532A2557E5005063C2 /* Preview Assets.xcassets */; };
+		E79E6A5B2A255EC0005063C2 /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79E6A5A2A255EC0005063C2 /* FirstTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		E79E6A4E2A2557E4005063C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E79E6A502A2557E5005063C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79E6A532A2557E5005063C2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E79E6A5A2A255EC0005063C2 /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				E79E6A4C2A2557E4005063C2 /* ChartApp.swift */,
+				E79E6A5A2A255EC0005063C2 /* FirstTabView.swift */,
 				E79E6A4E2A2557E4005063C2 /* ContentView.swift */,
 				E79E6A502A2557E5005063C2 /* Assets.xcassets */,
 				E79E6A522A2557E5005063C2 /* Preview Content */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79E6A4F2A2557E4005063C2 /* ContentView.swift in Sources */,
+				E79E6A5B2A255EC0005063C2 /* FirstTabView.swift in Sources */,
 				E79E6A4D2A2557E4005063C2 /* ChartApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
